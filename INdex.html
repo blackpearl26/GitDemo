@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function myfunction(){
+            document.getElementById("p1").innerHTML="Helloworld";
+        }
+        function myAlert(){
+            alert("Helloworld");
+        }
+    </script>
 </head>
 <body>
     <h2>Welcome from Developer2</h2>
+    <p id="p1">CLick the button to change the text</p>
+    <button onclick="myfunction()">Try it</button>
+    <br>
+    <button onclick="myAlert()">Click me</button>
 </body>
 </html>
