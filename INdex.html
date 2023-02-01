@@ -12,6 +12,13 @@
         function myAlert(){
             alert("Helloworld");
         }
+
+        function validate(){
+            var inname = document.getElementById("Name").value;
+                
+                alert(inname+"on form submit");
+                return false;
+        }
     </script>
 </head>
 <body>
@@ -20,5 +27,10 @@
     <button onclick="myfunction()">Try it</button>
     <br>
     <button onclick="myAlert()">Click me</button>
+    <form method="post">
+        <input type="text" placeholder="Enter name" id="Name">
+        <br>
+        <input type="submit" value="Submit" id="Submit" onclick="return validate()">
+    </form>
 </body>
 </html>
